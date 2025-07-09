@@ -4,10 +4,10 @@ from vector_store import FaissVectorStore
 
 # 1. Connect to SQL and fetch data
 conn = get_azure_sql_connection(
-    server="b18sqlserver.database.windows.net",
-    database="db-rag-poc",
-    username="demouser",
-    password="Changeme@123",
+    server={},
+    database={},
+    username={},
+    password={},
     driver="ODBC Driver 17 for SQL Server"
 )
 query = "SELECT TOP 100 * FROM SalesLT.Customer"
