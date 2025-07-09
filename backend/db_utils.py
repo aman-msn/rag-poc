@@ -6,10 +6,10 @@ import pandas as pd
 def get_azure_sql_connection(server, database, username, password, driver="ODBC Driver 17 for SQL Server"):
     connection_string = f"""
         DRIVER={{{driver}}};
-        SERVER=b18sqlserver.database.windows.net;
-        DATABASE=db-rag-poc;
-        UID=demouser;
-        PWD=$yn@pse@2025;
+        SERVER={server}
+        DATABASE={db_name};
+        UID={username};
+        PWD={password};
         Encrypt=yes;
         TrustServerCertificate=no;
         Connection Timeout=30;
