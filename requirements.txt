@@ -1,1 +1,7 @@
-requ
+pyodbc
+pandas
+sentence-transformers
+torch
+faiss-cpu
+fastapi
+uvicorn
